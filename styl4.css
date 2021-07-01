@@ -1,0 +1,460 @@
+/* mobile code here */
+
+
+/* mobile code here */
+
+
+/* mobile code here */
+
+
+/* mobile code here */
+
+@media screen and (max-width:425px) {
+    .goals {
+        width: 100%;
+        height: fit-content;
+        right: 3px;
+        float: center;
+        background-color: #120420;
+        margin: 5px 0px;
+    }
+    .money {
+        width: 100%;
+        height: fit-content;
+        right: 3px;
+        float: center;
+        background-color: #120420;
+        margin: 5px 0px;
+    }
+    .tasks {
+        width: 100%;
+        height: fit-content;
+        right: 3px;
+        float: center;
+        background-color: #120420;
+    }
+    .taskheader {
+        background-color: #241337;
+        margin: 5px 0px;
+    }
+    .taskheader table {
+        text-align: center;
+        vertical-align: middle;
+        width: 100%;
+    }
+    .taskheader table td {
+        padding: 0px 5px;
+        color: #662d91;
+        font-size: 20px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .tasklist {
+        width: 100%;
+    }
+    .tasklist table {
+        width: 100%;
+    }
+    .tasklist table td {
+        padding: 5px;
+        text-align: center;
+        vertical-align: middle;
+        font-weight: 300;
+        font-size: 20px;
+        color: #73e7ce;
+        border-bottom: solid 1px rgba(157, 1, 248, 0.658);
+    }
+    .tasklist table td textarea {
+        background-color: #140b1e;
+        margin: 2px;
+        align-content: center;
+        font-size: 20px #73e7ce;
+        width: 100%;
+        resize: none;
+    }
+}
+
+
+/* tablet code here */
+
+
+/* tablet code here */
+
+
+/* tablet code here */
+
+@media screen and (min-width:426px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 40% 40% 20%;
+        grid-gap: 10px;
+        padding: 10px;
+    }
+    .charts {
+        width: 100%;
+        height: 100%;
+        right: 3px;
+        float: right;
+        background-color: #120420;
+        margin: 5px 0px;
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .goals {
+        width: 100%;
+        height: 300px;
+        right: 3px;
+        float: right;
+        background-color: #120420;
+        margin: 5px 0px;
+    }
+    .tasks {
+        width: 100%;
+        height: fit-content;
+        right: 3px;
+        float: center;
+        background-color: #120420;
+    }
+    .money {
+        width: 100%;
+        height: 300px;
+        right: 3px;
+        float: left;
+        background-color: #120420;
+        margin: 5px 5px;
+    }
+    .calender {
+        width: 100%;
+        height: 300px;
+        right: 3px;
+        float: right;
+        background-color: #120420;
+        margin: 5px 5px;
+    }
+    .dates {
+        display: flex;
+        justify-content: center;
+    }
+    .dates table td {
+        padding: 3px;
+        text-align: center;
+        vertical-align: middle;
+        font-weight: 300;
+        font-size: 20px;
+        color: #73e7ce;
+        border: solid 0.1px rgba(157, 1, 248, 0.658);
+    }
+    .taskheader {
+        background-color: #241337;
+        margin: 5px;
+    }
+    .taskheader table {
+        width: 100%;
+        justify-content: center;
+    }
+    .taskheader table td {
+        padding: 0px 0px;
+        color: #662d91;
+        align-content: center;
+        font-size: 25px;
+    }
+    .tasklist {
+        margin: 5px;
+    }
+    .tasklist table {
+        justify-content: center;
+    }
+    .tasklist table td {
+        padding: 0px 25px;
+        align-content: center;
+        color: #73e7ce;
+        font-size: 20px;
+    }
+    .tasklist table td textarea {
+        background-color: #140b1e;
+        margin: 2px;
+        align-content: center;
+        font-size: 20px #73e7ce;
+        width: 100%;
+        resize: none;
+    }
+}
+
+
+/* pc code here */
+
+
+/* pc code here */
+
+
+/* pc code here */
+
+
+/* pc code here */
+
+
+/* pc code here */
+
+@media screen and (min-width: 770px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 40% 40% 20%;
+        grid-gap: 5px;
+        padding: 0px;
+    }
+    .charts {
+        width: 100%;
+        height: 100%;
+        right: 3px;
+        float: right;
+        background-color: #120420;
+        margin: 5px 0px;
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .goals {
+        right: 3px;
+        float: right;
+        background-color: #120420;
+        margin: 5px 0px;
+    }
+    .tasks {
+        width: 100%;
+        height: fit-content;
+        right: 3px;
+        float: center;
+        background-color: #120420;
+    }
+    .money {
+        right: 3px;
+        float: left;
+        background-color: #120420;
+        margin: 5px 5px;
+    }
+    .dd {
+        font-size: 20px;
+    }
+    .calender {
+        right: 3px;
+        float: right;
+        background-color: #120420;
+        margin: 5px 5px;
+        width: 99%;
+    }
+    .dates {
+        float: left;
+        width: fit-content;
+        background-color: rgba(157, 1, 248, 0.658);
+    }
+    .dates table td {
+        max-width: 40px;
+        text-align: center;
+        vertical-align: middle;
+        background-color: #120420;
+        font-size: 20px;
+        color: #73e7ce;
+    }
+    .taskheader {
+        background-color: #241337;
+        margin: 5px;
+    }
+    .goallist table th {
+        color: #662d91;
+        align-content: center;
+        font-size: 20px;
+        background-color: #241337;
+        width: 100%;
+    }
+    .goallist table td {
+        padding: 0px 25px;
+        align-content: center;
+        color: #73e7ce;
+        font-size: 20px;
+        border-bottom: solid 1px rgba(157, 1, 248, 0.658);
+    }
+    .sidetab table th {
+        color: #662d91;
+        align-content: center;
+        font-size: 20px;
+        background-color: #241337;
+    }
+    .tasklist1 {
+        margin: 5px;
+        display: grid;
+        grid-template-columns: 75% 25%;
+    }
+    .goallist {
+        margin: 5px;
+        display: grid;
+        grid-template-columns: 75% 25%;
+    }
+    .sidetab {
+        align-content: center;
+        color: #73e7ce;
+        font-size: 20px;
+        border-bottom: solid 1px rgba(157, 1, 248, 0.658);
+    }
+    .sidetab table td {
+        align-content: center;
+        color: #73e7ce;
+        font-size: 20px;
+        border-bottom: solid 1px rgba(157, 1, 248, 0.658);
+    }
+    .maintab table th {
+        color: #662d91;
+        align-content: center;
+        font-size: 20px;
+        background-color: #241337;
+        height: 10px;
+    }
+    .maintab table td {
+        align-content: center;
+        color: #73e7ce;
+        font-size: 20px;
+        height: 10px;
+        border-bottom: solid 1px rgba(157, 1, 248, 0.658);
+    }
+    .maintab td textarea {
+        background-color: #140b1e;
+        margin: 2px;
+        align-content: center;
+        font-size: 20px #73e7ce;
+        width: 100%;
+        resize: none;
+        border-bottom: solid 1px rgba(157, 1, 248, 0.658);
+    }
+    .maintab {
+        border-right: solid 1px rgba(157, 1, 248, 0.658);
+        grid-template-rows: 83% 17%;
+    }
+    .tasktab {
+        overflow-x: scroll;
+        height: 260px;
+    }
+    .taskentry {
+        width: 375px;
+        height: 30px;
+    }
+    #displaytask {
+        width: 357px;
+    }
+    .moneyall {
+        grid-template-columns: 80% 20%;
+        display: grid;
+        height: 200px;
+    }
+    .moneylist {
+        margin: 5px;
+        border: solid 1px rgba(157, 1, 248, 0.658);
+        display: grid;
+        grid-template-rows: 83% 17%;
+    }
+    .moneysum {
+        border: solid 1px rgba(157, 1, 248, 0.658);
+    }
+    .moneyall .moneylist table {
+        justify-content: center;
+        width: 377px;
+    }
+    .moneyall .moneylist table th {
+        color: #662d91;
+        align-content: center;
+        font-size: 20px;
+        background-color: #241337;
+        height: 10px;
+        position: sticky;
+    }
+    .moneyall .moneylist table td {
+        align-content: center;
+        color: #73e7ce;
+        font-size: 20px;
+        height: 10px;
+        border-bottom: solid 1px rgba(157, 1, 248, 0.658);
+    }
+    .moneyadd {
+        align-content: center;
+        grid-template-columns: 30% 30% 30% 10%;
+    }
+    .moneyadd input {
+        align-content: center;
+        background-color: #73e7ce;
+        color: darkblue;
+        font-size: 20px;
+        width: 80px;
+        border: none;
+        height: 20px;
+        padding: 2px;
+        margin: 2px;
+    }
+    button .sub {
+        height: 25px;
+        padding: 2px;
+        margin: 2px;
+        color: darkmagenta;
+        background-color: darkred;
+        border-radius: 1px;
+    }
+    .moneyadd {
+        background-color: brown;
+        height: 60px;
+        display: flex;
+    }
+    .moneyadd table td {
+        color: #662d91;
+        align-content: center;
+        font-size: 20px;
+        background-color: #241337;
+    }
+    .tasklist table td textarea {
+        background-color: #140b1e;
+        margin: 2px;
+        align-content: center;
+        font-size: 20px #73e7ce;
+        width: 100%;
+        resize: none;
+        border-bottom: solid 1px rgba(157, 1, 248, 0.658);
+    }
+    input {
+        background-color: #140b1e;
+        border: solid 1px rgba(157, 1, 248, 0.658);
+        width: 85px;
+        font-size: 20px;
+        color: aqua;
+    }
+    button {
+        background-color: #140b1e;
+        border: solid 1px rgba(157, 1, 248, 0.658);
+        width: 85px;
+        font-size: 20px;
+        color: aqua;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    overflow-x: hidden;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: rgba(157, 1, 248, 0.658)
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

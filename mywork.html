@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link href="counts.css" media="all" rel="stylesheet" />
+<link rel="stylesheet" href="styl4.css">
+<link rel="stylesheet" href="stylee.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<!--body part starts here ............body part starts here ............body part starts here ............-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<body style="background-color: #554575; width: 98%; height: 98%;">
+
+    <div class="grid-container">
+        <div class="tasks">
+
+            <div class="tasklist1">
+                <div class="maintab">
+                    <div class="tasktab">
+                        <table id="member_table" style="width: 410px;">
+
+                            <tr>
+                                <th>#</th>
+                                <th style="width:150px;">
+                                    <a href="#" onclick="sortByImportance('first_name')"></a>tasks to do
+                                </th>
+                                <th><a href="#" onclick="sortByImportance('last_name')">importance</a href="#">
+                                </th>
+                                <th> <a href="#" onclick="sortByImportance('designation')">deadline</a>
+                                </th>
+                            </tr>
+
+                        </table>
+
+                    </div>
+                    <div class="modal-footer-extended">
+                        <form id="input_form" onsubmit="saveMemberInfo(); return false;">
+                            <div class="form-group">
+
+                                <input type="text" class="form-control" placeholder="task" id="first_name" required />
+
+                                <input type="text" class="form-control" placeholder="importance" id="last_name" required />
+
+                                <input type="text" class="form-control" placeholder="deadline" id="designation" required />
+
+                                <button class="btn btn-primary">Create</button>
+
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="sidetab">
+                    <div style="height: 150px; overflow-x: scroll;">
+                        <table>
+                            <th>tasks completed</th>
+                            <tr>
+                                <td> Count:<span class="dd"></span></td>
+
+
+                            </tr>
+                            <tr>
+                                <td> <button class="plusOne">+1</button></td>
+                            </tr>
+                            <tr>
+                                <td> <button class="minusOne">-1</button></td>
+                            </tr>
+
+
+                        </table>
+                    </div>
+                    <div style="height: 150px; overflow-x: scroll;">
+                        <table>
+                            <th>tasks completed</th>
+                            <tr>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="goals">
+
+            <div class="goallist">
+                <table>
+                    <th>Goals</th>
+                    <th>check box</th>
+                    <tr>
+                        <td>make an java game </td>
+                        <td><input type="checkbox" checked="checked"></td>
+                    </tr>
+                    <tr>
+                        <td>tasks to do</td>
+                        <td><input type="checkbox" checked="checked"></td>
+                    </tr>
+                    <tr>
+                        <td>tasks to do</td>
+                        <td><input type="checkbox" checked="checked"></td>
+                    </tr>
+                    <tr>
+                        <td>tasks to do</td>
+                        <td><input type="checkbox" checked="checked"></td>
+                    </tr>
+                    <tr>
+                        <td>tasks to do</td>
+                        <td><input type="checkbox" checked="checked"></td>
+                    </tr>
+
+
+                </table>
+            </div>
+        </div>
+
+        <div class="money">
+            <div class="moneyall">
+                <div class="moneylist">
+                    <div style="height:230px; overflow-x:scroll">
+                        <table id="money_table">
+                            <thead>
+                                <tr>
+                                    <th>&</th>
+                                    <th>
+                                        <a href="javascript: void(0);" style="color: #4c3083;" onclick="sortBy('reason')">Reason</a>
+                                    </th>
+                                    <th>
+                                        <a href="javascript: void(0);" style="color: #4c3083;" onclick="sortBy('inout')">inout</a>
+
+                                    </th>
+                                    <th>
+                                        <a href="javascript: void(0);" style="color: #4c3083;" onclick="sortBy('ammount')">Ammount</a>
+
+
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+
+                    </div>
+                    <div class="mod-footer-extend">
+                        <form id="input_money" onsubmit="saveMoneyInfo(); return false;">
+                            <div>
+                                <input type="text" placeholder="Reason" id="reason" required />
+                                <input type="text" placeholder="inout" id="inout" required />
+                                <input type="text" placeholder="Ammount" id="ammount" required />
+
+                                <button class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="moneysum"> <button onclick="lol()">uuuu</button><span id="val" style="font-size: 20px;color:red;"></span></div>
+            </div>
+
+
+        </div>
+        <div class="calender">
+            <div id="container">
+                <div id="header">
+                    <div id="monthDisplay"></div>
+                    <div>
+                        <button id="backButton">Back</button>
+                        <button id="nextButton">Next</button>
+                    </div>
+                </div>
+
+                <div id="weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tues</div>
+                    <div>Wed</div>
+                    <div>Thur</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+
+                <div id="calendar"></div>
+            </div>
+
+            <div id="newEventModal">
+                <h2>New Event</h2>
+
+                <input id="eventTitleInput" placeholder="Event Title" />
+
+                <button id="saveButton">Save</button>
+                <button id="cancelButton">Cancel</button>
+            </div>
+
+            <div id="deleteEventModal">
+                <h2>Event</h2>
+
+                <p id="eventText"></p>
+
+                <button id="deleteButton">Delete</button>
+                <button id="closeButton">Close</button>
+            </div>
+
+            <div id="modalBackDrop"></div>
+        </div>
+
+        <div class="charts">
+            <div>
+                <canvas id="monthlytasks" width="400px" height="400px"></canvas>
+
+            </div>
+            <div>
+                <canvas id="monthlyearning" width="400px" height="400px"></canvas>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+
+<script src="./js/script.js"></script>
+<script src="./js/aks.js"></script>
+<script src="./js/mon.js"></script>
+<script>
+    var mo = document.getElementById("money_table"),
+        sumVal = 0;
+
+    for (var i = 1; i < mo.rows.length; i++) {
+        sumVal = sumVal + parseInt(mo.rows[i].cells[3].innerHTML);
+    }
+
+    function lol() {
+        document.getElementById("val").innerHTML = "Sum Value = " + sumVal;
+        console.log(sumVal);
+        alert(sfdfsdfsd)
+    }
+
+
+
+
+
+
+
+    var ctx = document.getElementById('monthlytasks').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['1st week', '2nd week', '3rd week', '4th week'],
+            datasets: [{
+                label: 'monthly task chart',
+                data: [12, 30, 3, 5, 2, 3],
+                backgroundColor: [
+                    '#73e7ce',
+                ],
+
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+    var ctx = document.getElementById('monthlyearning').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31'],
+            datasets: [{
+                label: 'monthly task chart',
+                data: [12, 30, 3, 5, 2, 3, 30, 3, 5, 2, 3, 30, 3, 5, 2, 3, 24, 3, 5, 2, 3, 30, 3, 5, 2, 3, 30, 3, 5, 2, 3],
+                backgroundColor: [
+                    '#73e7ce',
+
+
+                ],
+
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>
+
+
+
+
+</html>
